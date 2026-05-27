@@ -441,8 +441,8 @@ const pageMarkup = `<div class="page-shell">
   </div>`;
 
 const prices = {
-  dog: { basic: "?88", style: "?168", spa: "?228" },
-  cat: { basic: "?128", style: "?218", spa: "?268" },
+  dog: { basic: "¥88", style: "¥168", spa: "¥228" },
+  cat: { basic: "¥128", style: "¥218", spa: "¥268" },
 };
 
 const wrapIndex = (index, length) => {
