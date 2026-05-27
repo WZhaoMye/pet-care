@@ -406,8 +406,36 @@ const pageMarkup = `<div class="page-shell">
 
     <footer class="footer">
       <div class="footer-inner">
-        <span>© 2026 澄澄宠物洗护 · 温柔洗护，认真交付</span>
-        <a href="#top">返回顶部</a>
+        <div class="footer-brand">
+          <a class="footer-logo" href="#top" aria-label="返回澄澄宠物洗护首页">
+            <span class="brand-mark" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M11.5 8.5c-2.1-3.7-7.5-1.8-6.8 2.8.5 3.4 3.7 5.6 6.8 7.7 3.1-2.1 6.3-4.3 6.8-7.7.7-4.6-4.7-6.5-6.8-2.8Z"></path><path d="M18.5 5.4c1.4.2 2.5 1.4 2.5 2.9"></path></svg>
+            </span>
+            澄澄宠物洗护
+          </a>
+          <p>温柔洗护，认真交付。每一次到店都先观察状态，再安排适合宠物的清洁、护理和休息节奏。</p>
+        </div>
+        <div class="footer-links" aria-label="页脚信息">
+          <div>
+            <strong>服务承诺</strong>
+            <span>一宠一巾 · 工具消毒 · 护理记录</span>
+            <span>胆小、敏感、老年宠物可备注慢速护理</span>
+          </div>
+          <div>
+            <strong>门店信息</strong>
+            <span>上海市宜川路街道陕西北路 1620 号</span>
+            <span>周一至周日 10:00 - 20:00</span>
+          </div>
+          <div>
+            <strong>快捷入口</strong>
+            <a href="tel:18593467886">电话预约 18593467886</a>
+            <a href="#booking">填写预约意向</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 澄澄宠物洗护 · 猫狗洗澡 · 美容修剪 · 皮毛养护</span>
+          <a href="#top">返回顶部</a>
+        </div>
       </div>
     </footer>
   </div>`;

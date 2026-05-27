@@ -1005,24 +1005,79 @@
     }
 
     .footer {
-      padding: 30px 0;
-      color: rgba(255, 255, 255, 0.8);
+      padding: 46px 0 26px;
+      color: rgba(255, 255, 255, 0.78);
       background: #18313a;
     }
 
     .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1.5fr);
+      gap: 34px 48px;
       width: min(1180px, calc(100% - 40px));
       margin: 0 auto;
       font-size: 14px;
     }
 
+    .footer-brand {
+      display: grid;
+      gap: 14px;
+    }
+
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .footer-logo .brand-mark {
+      width: 48px;
+      height: 48px;
+      color: var(--white);
+      background: var(--sage-dark);
+      box-shadow: none;
+    }
+
+    .footer-brand p {
+      max-width: 380px;
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .footer-links div {
+      display: grid;
+      align-content: start;
+      gap: 10px;
+    }
+
+    .footer-links strong {
+      color: var(--white);
+      font-size: 15px;
+    }
+
     .footer a {
       color: var(--white);
       font-weight: 800;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      grid-column: 1 / -1;
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      color: rgba(255, 255, 255, 0.7);
     }
 
     .icon {
@@ -1073,6 +1128,14 @@
 
       .feature-media {
         min-height: 420px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -1183,7 +1246,15 @@
         font-size: 12px;
       }
 
-      .footer-inner {
+      .footer {
+        padding: 36px 0 24px;
+      }
+
+      .footer-links {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
         align-items: flex-start;
         flex-direction: column;
       }
